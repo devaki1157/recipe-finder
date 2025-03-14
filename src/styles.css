@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef6e4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fae1dd;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #5e503f;
+    font-weight: bold;
+  }
+  
+  .profile-btn a {
+    text-decoration: none;
+    color: #fff;
+    background: #9c6644;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9c6644;
+  }
+  
+  .cuisine-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .cuisine-btn {
+    background: #f8edeb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #fae1dd;
+    margin-top: 20px;
+  }
+  
