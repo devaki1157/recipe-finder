@@ -1,0 +1,60 @@
+/* Background for Login/Signup */
+.login-signup-container {
+    /* background-image: url('/images/login-background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d9534f;
+}
+
+/* Toggle Text */
+.toggle-text {
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle-text:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+}

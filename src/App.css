@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* Background for Home Page */
+.home-container {
+    background: url("/Users/harshitha/Desktop/RecipeFinder/recipe-finder-frontend/images/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Background for Recipe Finder Page */
+.recipe-finder-container {
+    background: url("/Users/harshitha/Desktop/RecipeFinder/recipe-finder-frontend/images/recipies-bg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Translucent Navbar - Reverted to Original */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6); /* Translucent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-left .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-right {
+    display: flex;
+    gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-right a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-btn {
+    background: #ff5733;
+    border-radius: 5px;
+}
+
+.profile-btn {
+    background: #4caf50;
+    border-radius: 5px;
+}
+
+/* Move "Welcome to Recipe Finder" Diagonally Upwards in Black */
+.welcome-text {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    top: 15%; /* Moved further up */
+    left: 5%; /* Adjusted leftward */
+    font-family: "Poppins", sans-serif; /* Playful yet sophisticated font */
+}
+
+/* Description Below Welcome Text */
+.home-description {
+    font-size: 1.3rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    position: absolute;
+    top: 25%; /* Positioned below the welcome text */
+    left: 5%;
+}
+
+/* "Let's Cook" Button */
+.lets-cook-btn {
+    background-color: #ff5733;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 35%; /* Positioned below the description */
+    left: 5%;
+}
+
+.lets-cook-btn:hover {
+    background-color: #e04e2a;
 }

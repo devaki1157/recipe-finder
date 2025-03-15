@@ -1,0 +1,38 @@
+.search-container {
+  margin: 50px auto;
+  max-width: 450px; /* Slightly wider for a balanced look */
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for card effect */
+  border: 1px solid #ddd; /* Light border for a cleaner look */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc5200;
+}
